@@ -14,5 +14,6 @@ git checkout -b add-book-reviews
 ```bash
 git add book_reviews.html
 git commit -m "Add book reviews section"
+git push origin add-book-reviews
 ```
 ![new branch](images/3adding-review-branch.png)
