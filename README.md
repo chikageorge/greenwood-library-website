@@ -39,3 +39,44 @@ git push origin main
 ```
 ![merge branches](images/8merging-branches.png)
 ![merge branches](images/9push-update-to-main.png)
+
+## Jamie's Work: Updating Evant page
+### 1. Create and Switch to New Branch
+```bash
+git checkout main
+git pull origin main         
+git checkout -b event-update
+```
+![new branch](images/3adding-review-branch.png)
+
+### 2. Stage and Commit changes
+```bash
+git add events.html
+git commit -m "Update events page with new listings"
+git pull --rebase origin main
+# Resolve any conflicts if they occur
+git push origin events-update
+```
+![new branch](images/4staging-and-commiting.png)
+
+### 3. Creating Pull Request for Morgan's Work
+#### Steps:
+**Navigate to repository on GitHub**
+
+**Click "Compare & pull request" for event page**
+
+**Add description: "updating event page"**
+
+**Click "Create pull request"**
+![pull request](images/5compare-and-pull-request.png)
+![pull request](images/6pull-request.png)
+![pull request](images/7successful-pull-request.png)
+
+### 4. Merging to Main (After Approval)
+```bash
+git checkout main
+git merge events-update
+git push origin main
+```
+![merge branches](images/8merging-branches.png)
+![merge branches](images/9push-update-to-main.png)
