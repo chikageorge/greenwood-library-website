@@ -6,4 +6,13 @@
 ```bash
 git checkout main
 git pull origin main         
-git checkout -b morgan-book-reviews
+git checkout -b add-book-reviews
+```
+![new branch](images/3adding-review-branch.png)
+
+### 2. Stage and Commit changes
+```bash
+git add book_reviews.html
+git commit -m "Add book reviews section"
+```
+![new branch](images/3adding-review-branch.png)
