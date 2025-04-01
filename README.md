@@ -27,4 +27,15 @@ git push origin add-book-reviews
 **Add description: "Adding book reviews section"**
 
 **Click "Create pull request"**
-![new branch](images/4staging-and-commiting.png)
+![pull request](images/5compare-and-pull-request.png)
+![pull request](images/6pull-request.png)
+![pull request](images/7successful-pull-request.png)
+
+### 4. Merging to Main (After Approval)
+```bash
+git checkout main
+git merge morgan-book-reviews
+git push origin main
+```
+![merge branches](images/8merging-branches.png)
+![merge branches](images/9push-update-to-main.png)
